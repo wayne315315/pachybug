@@ -3,7 +3,8 @@ Pachyderm 1.11.0 bug : Cron job can not be ad hoc triggered with Build Pipeline<
 
 Reproduce Error with following steps<br/> 
 `cd dockerfile`<br/> 
-`docker build -t bug .`<br/> 
+`docker build -t bug .`<br/>
+`cd ..`<br/> 
 `pachctl create pipeline -f bug.json`<br/> 
 
 Cron job works as expected, as you can see from this command. Print "I am bug" every minute<br/>
