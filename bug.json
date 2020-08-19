@@ -1,0 +1,21 @@
+{
+  "pipeline": {
+    "name": "bug"
+  },
+  "description": "Bug test",
+  "input": {
+    "cron": {
+      "name": "tick",
+      "spec": "*/1 * * * *",
+      "overwrite": true
+    }  
+  },
+  "transform": {
+    "build":{
+      "image":"bug",
+      "path": "./app"
+    },
+    "cmd":["sh", "/pfs/build/run.sh"]
+  },
+  "enable_stats": true
+}
