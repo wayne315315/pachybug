@@ -1,5 +1,5 @@
 # pachybug
-Pachyderm 1.11.0 bug : Cron job can not be ad hoc triggered with Build Pipeline<br/> 
+Pachyderm 1.11.0 bug : Cron job can not be ad hoc triggered with Build Pipeline (fixed in 1.11.3) <br/> 
 
 Reproduce Error with following steps<br/> 
 `cd dockerfile`<br/> 
